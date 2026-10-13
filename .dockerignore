@@ -1,0 +1,17 @@
+# 构建镜像时排除——避免把本地虚拟环境、密钥和运行时产物打进镜像
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.git/
+.gitignore
+.env
+*.log
+downloads/
+static/sites/
+.superpowers/
+.playwright-mcp/
+docs/
+tests/
+requirements-dev.txt

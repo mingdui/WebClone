@@ -1,0 +1,14 @@
+# WebClone 运行时依赖
+# HTTP 请求使用 Python 内置 urllib，无需额外 HTTP 库。
+
+flask>=2.3.0
+flask-socketio>=5.3.0
+simple-websocket>=0.5.0
+beautifulsoup4>=4.12.0
+python-dotenv>=1.0.0
+
+# 说明：
+# - 本项目使用 Flask-SocketIO 的 threading 模式（见 app.py 的 async_mode），
+#   因此不需要 eventlet / gevent。
+# - gunicorn 仅在 Linux 生产部署时需要（Windows 上无法运行），
+#   已在 Dockerfile 中单独安装；裸机部署见 README「生产部署」一节。

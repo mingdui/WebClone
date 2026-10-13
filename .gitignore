@@ -1,0 +1,23 @@
+# 环境与密钥（.env 含 SECRET_KEY，绝不入库）
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# 运行时产物
+*.log
+downloads/
+static/sites/
+
+# 开发过程产物
+.superpowers/
+.playwright-mcp/
+
+# 操作系统
+.DS_Store
+Thumbs.db
